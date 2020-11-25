@@ -1,0 +1,710 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+   transition: 1s;
+ }
+
+ /* 更改滾輪顏色 */
+*::-webkit-scrollbar {  
+   width: 20px;  
+   }  
+*::-webkit-scrollbar-track-piece {  
+   background-color: #dfcda0;  
+   } /* 滾輪背景顏色 */  
+     
+ *::-webkit-scrollbar-track {  
+   background-color: #ffae00;  
+   } /* 外層滑軌背景顏色 */  
+     
+ *::-webkit-scrollbar-thumb {  
+   /* background-color: rgba(255,255,255,.6);   */
+   /* background-image: url(https://cdn.hk01.com/di/media/images/2076178/org/3291b87faf0a3a9955436bad89c60b98.jpg/Ykel-gHgs-740wUt2q04LC9DU6jtIwbS0Az3q9AM96s?v=w1920);
+   background-repeat: no-repeat; */
+   background-color: cornsilk;
+   border: cornsilk solid 5px;
+   border-radius: 10%;
+   } /* 內層滑塊背景顏色 */  
+     
+ *:-webkit-scrollbar-button {  
+   background-color: #fff;  
+   display: none;  
+   } /* 滑軌兩端按鈕顏色 */  
+ 
+html {
+   margin: 0;
+   padding: 0;
+}
+body {
+   font: 75% georgia, sans-serif;
+   line-height: 1.88889;
+   color: #555753;
+   background:url(./bgpic2.jpg) center center no-repeat;
+   background-size: contain;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+   content: ;
+   /* background: url("https://photo.minwt.com/cc0/09.jpg")center center no-repeat; */
+   /* 設定區塊高度 */
+     /* min-height: 600px; */
+   /* 背景自動縮放/固定 */
+     background-attachment: fixed;
+     background-size: cover;
+}
+p {
+   margin-top: 0;
+   text-align: justify;
+}
+h3 {
+   font: italic normal 1.4em georgia, sans-serif;
+   letter-spacing: 1px;
+   margin-bottom: 0;
+   color: #7d775c;
+}
+a:link {
+   font-weight: bold;
+   text-decoration: none;
+   color: #caa245;
+   z-index: 99;
+}
+a:visited {
+   font-weight: bold;
+   text-decoration: none;
+   color: #caa245;
+}
+a:hover,
+a:focus,
+a:active {
+   text-decoration: underline;
+   color: #ffae00;
+}
+abbr {
+   border-bottom: none;
+}
+
+.intro {
+   min-width: 470px;
+   width: 100%;
+   
+}
+
+header h1 {
+   font-size: 50px;
+   color: white;
+   text-shadow: black 0.1em 0.1em 0.2em
+   animation-name: slideDown 2s;
+	-webkit-animation-name: slideDown;	
+/* slidedown動畫 */
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+   visibility: visible !important;	
+   margin: auto;
+   background: rgba(0, 0, 0, 0.1);
+   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+   text-align: center;
+}
+
+header h2 {
+   color: white;
+   text-shadow: black 0.1em 0.1em 0.2em
+   animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+/* slidedown動畫 */
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+	visibility: visible !important;	
+}
+
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(8%);
+	}
+	65%{
+		transform: translateY(-4%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		transform: translateY(-2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+@-webkit-keyframes slideDown {
+	0% {
+		-webkit-transform: translateY(-100%);
+	}
+	50%{
+		-webkit-transform: translateY(8%);
+	}
+	65%{
+		-webkit-transform: translateY(-4%);
+	}
+	80%{
+		-webkit-transform: translateY(4%);
+	}
+	95%{
+		-webkit-transform: translateY(-2%);
+	}			
+	100% {
+		-webkit-transform: translateY(0%);
+	}	
+}
+
+
+header {
+   background-image: url(./headpic.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   height:100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   /* fade in動畫 */
+   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 2s; /* Firefox < 16 */
+   -ms-animation: fadein 2s; /* Internet Explorer */
+   -o-animation: fadein 2s; /* Opera < 12.1 */
+   animation: fadein 2s ;
+   z-index: -999;
+}
+
+
+@keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
+
+h1, h1::before, h1::after {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 500px;
+   height: 200px;
+   z-index: 999;
+ }
+  
+ h1::before, h1::after {
+   content: '';
+   z-index: 999;
+   margin: -5%;
+   box-shadow: inset 0 0 0 2px;
+   animation: clipMe 8s linear infinite;
+ }
+ h1::before {
+   animation-delay: -4s;
+   z-index: 999;
+ }
+  
+ @keyframes clipMe {
+   0%, 100% {
+     clip: rect(0px, 520.0px, 2px, 0px);
+   }
+   25% {
+     clip: rect(0px, 2px, 520.0px, 0px);
+   }
+   50% {
+     clip: rect(518.0px, 520.0px, 520.0px, 0px);
+   }
+   75% {
+     clip: rect(0px, 520.0px, 520.0px, 518.0px);
+   }
+ }   
+ @keyframes typing {
+   from { width: 0 }
+ }
+ 
+ .preamble h3 {
+   width: 13em;
+   overflow: hidden;
+   white-space: nowrap;
+   animation: typing 4s steps(11) infinite;
+   font-size: 3rem;
+ }
+ .explanation h3 {
+   width: 13em;
+   overflow: hidden;
+   white-space: nowrap;
+   animation: typing 4s steps(11) infinite;
+   font-size: 3rem;
+ }
+ .participation h3 {
+   width: 13em;
+   overflow: hidden;
+   white-space: nowrap;
+   animation: typing 4s steps(11) infinite;
+   font-size: 3rem;
+ }
+ .benefits h3 {
+   width: 13em;
+   overflow: hidden;
+   white-space: nowrap;
+   animation: typing 4s steps(11) infinite;
+   font-size: 3rem;
+ }
+ .requirements h3 {
+   width: 13em;
+   overflow: hidden;
+   white-space: nowrap;
+   animation: typing 4s steps(11) infinite;
+   font-size: 3rem;
+ }
+.explanation{
+   background: white;
+   color: black;
+   border: gray 5px inset;
+   width: 60%;
+   float: right;
+   height: 50vh;
+   /* margin-top: 10rem; */
+   padding: 40px;
+   /* margin-bottom: 10rem; */
+
+}
+
+.explanation::before {
+   content: '';
+   background-image: url(https://open3dmodel.com/wp-content/uploads/2019/09/1569302775_Tyrannosaurus-Rex-Dinosaur-3D-Model.jpg);
+   background-repeat: no-repeat;
+   background-size: 40% 50vh;
+   color:black;
+   text-align: center;
+   line-height: 400px;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0%;
+   margin-top: -45px;
+   transition: 1s;
+   }
+
+.participation{
+   background: black;
+   border: gray 5px inset;
+   color: white;
+   width: 60%;
+   float: left;
+   height: 50vh;
+   /* margin-top: 10rem; */
+   padding: 40px;
+   transition: 1s all;
+   margin-bottom: 10rem;
+
+}
+
+.participation::before { 
+   content: '';
+   background-image: url(https://www.cam.ac.uk/sites/www.cam.ac.uk/files/shorthand/198262/efoOPKBkqv/assets/G3Gd42W8Sk/title-header-2560x1440.jpeg);
+   background-repeat: no-repeat;
+   background-size: 40% 50vh;
+   color:black;
+   text-align: center;
+   line-height: 400px;
+   width: 100%;
+   height: 50%;
+   position: absolute;
+   left: 60%;
+   margin-top: -45px;
+   transition: 1s all;
+
+   }
+
+
+.benefits{
+   background: b3ae94;
+   color: black;
+   border: gray 5px inset;
+   width: 60%;
+   float: right;
+   height: 50vh;
+   /* margin-top: 10rem; */
+   background: white;
+   padding: 40px;
+   /* margin-bottom: 10rem; */
+}
+.benefits::before {
+   content: '';
+   background-image: url(https://www.renderhub.com/3dseller/fantasy-monster-dinosaur/fantasy-monster-dinosaur-01.jpg);
+   background-repeat: no-repeat;
+   background-size: 40% 50vh;
+   color:black;
+   text-align: center;
+   line-height: 400px;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0%;
+   margin-top: -45px;
+   transition: 1s;
+   }
+.requirements{
+   background: black;
+   border: gray 5px inset;
+   color: white;
+   width: 60%;
+   float: left;
+   height: 50vh;
+   /* margin-bottom: 10rem; */
+   padding: 30px;
+   margin-bottom: 20rem;
+
+}
+.requirements::before {
+content: '';
+background-image: url(https://cdn.londonandpartners.com/-/media/images/london/visit/things-to-do/sightseeing/london-attractions/victoria-and-albert-museum/vanda_copyright_visitlondon_jonreid1920x1080.jpg?mw=640&hash=462899C04B86D1DCA5119216E8E0E72CE355AB00);
+background-repeat: no-repeat;
+background-size: 40% 50vh;
+color:black;
+text-align: center;
+line-height: 400px;
+width: 100%;
+height: 70%;
+position: absolute;
+left: 60%;
+margin-top: -35px;
+transition: 1s;
+}
+
+.summary {
+margin:auto ;
+margin-top: 25rem;
+margin-bottom: 25rem;
+text-shadow: black 0.1em 0.1em 0.2em
+/* border: gray 5px solid; */
+color: #fff;
+/* background: rgb(255, 255, 255); */
+text-transform: uppercase;
+animation: shining 0.05s alternate infinite;
+width: 30%;
+height: 30vh;
+font-size: 2rem;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-style: italic;
+}
+
+.preamble::after {
+   position: relative;
+   width: 5em;
+   height: 5em;
+   background-image: ;
+   border-radius: 50%;
+   background-image: (https://cdn.hk01.com/di/media/images/2076178/org/3291b87faf0a3a9955436bad89c60b98.jpg/Ykel-gHgs-740wUt2q04LC9DU6jtIwbS0Az3q9AM96s?v=w1920);
+   background-repeat: no-repeat;
+   box-shadow: inset 0.5em -0.5em #857428;
+   animation: spin 4s linear infinite;
+ 
+   &::before,
+   &::after {
+     position: absolute;
+     content: "";
+     width: 100%;
+     height: 100%;
+     background: inherit;
+     border-radius: inherit;
+     box-shadow: inherit;
+   }
+ 
+   &::before {
+     filter: blur(5px);
+   }
+ 
+   &::after {
+     filter: blur(10px);
+   }
+ }
+ 
+ @keyframes spin {
+   to {
+     transform: rotate(1turn);
+   }
+ }
+
+.preamble {
+background: black;
+border: gray 5px inset;
+height: auto;
+padding: 40px;
+width: 60%;
+height: 50vh;
+color: white;
+font-size: 14px;
+margin-bottom: 15rem;
+}
+.preamble::after {
+   content: '';
+   color:black;
+   text-align: center;
+   width: 30%;
+   height: 50%;
+   position: absolute;
+   left: 20%;
+   top: 130%;
+   transition: 1s;
+   z-index: -1;
+
+   }
+
+.preamble::before {
+   content: '';
+   background-image: url(https://cdn.britannica.com/51/194651-050-747F0C18/Interior-National-Gallery-of-Art-Washington-DC.jpg);
+   background-repeat: no-repeat;
+   background-size: 40% 50vh;
+   color:black;
+   text-align: center;
+   line-height: 400px;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 60%;
+   margin-top: -45px;
+   transition: 1s;
+   }
+
+.preamble p1{
+font-size: 0px;
+}
+.preamble p2{
+font-size: 10px;
+}
+.preamble p3{
+height: 10vh;
+}
+.supporting {
+margin-bottom: 40px;
+}
+#wrapper {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   position: fixed;
+   right: 0%;
+   top: 0%;
+   color: white;
+   cursor: pointer;
+ }
+ 
+ #wrapper a {
+   text-decoration: none;
+   color: #857428;
+ }
+ 
+ #wrapper ul {
+   color: black;
+   background: rgba(255, 255, 255, 0.55);
+ }
+#design-selection {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ #design-archives {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ #zen-resources {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ #design-selection > nav > ul, #design-archives > nav > ul, #zen-resources > ul {
+   display: none;
+   position: absolute;
+   z-index: 1;
+   width: 100%;
+   margin-bottom: 1rem;
+ }
+ 
+ #design-selection:hover > nav > ul, #design-archives:hover > nav > ul, #zen-resources:hover > ul {
+   display: block;
+   width: 200px;
+   height: auto;
+   cursor: pointer;
+ }
+ 
+
+footer {
+   width: 100%;
+   clear: both;
+   height: 25vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+
+}
+footer a:link,
+footer a:visited {
+   /* text-shadow: slategrey; */
+   text-align: center;
+   height: 100%;
+   width: 100%;
+   font-size: 2rem;
+   line-height: 25vh;
+   filter: glow(color:darkgrey, strength=2); 
+   color:white;  
+    font-weight:900;
+    text-shadow: 1px 1px 5px darkgrey;
+}
+footer a:nth-child(odd){
+	background-color:rgba(160, 160, 160, 0.5);
+}
+footer a:nth-child(even){
+   background-color:rgba(255, 255, 255, 0.5);
+   color: darkgray;
+}
+
+.sidebar {
+   margin-left: 600px;
+   position: absolute;
+   top: 0;
+   right: 0;
+   /* slideExpandUp動畫 */
+   animation-name: slideExpandUp;
+	-webkit-animation-name: slideExpandUp;	
+	animation-duration: 1.6s;	
+	-webkit-animation-duration: 1.6s;
+	animation-timing-function: ease-out;	 
+	-webkit-animation-timing-function: ease -out;
+	visibility: visible !important;	
+}
+.sidebar .wrapper {
+   /* font: 10px verdana, sans-serif; */
+   background: rgba(187, 183, 151, 0.5);
+   padding: 10px;
+   margin-top: 100px;
+   width: 200px;
+   /* height: 500px; */
+}
+
+@keyframes slideExpandUp {
+	0% {
+		transform: translateY(100%) scaleX(0.5);
+	}
+	30%{
+		transform: translateY(-8%) scaleX(0.5);
+	}	
+	40%{
+		transform: translateY(2%) scaleX(0.5);
+	}
+	50%{
+		transform: translateY(0%) scaleX(1.1);
+	}
+	60%{
+		transform: translateY(0%) scaleX(0.9);		
+	}
+	70% {
+		transform: translateY(0%) scaleX(1.05);
+	}			
+	80%{
+		transform: translateY(0%) scaleX(0.95);		
+	}
+	90% {
+		transform: translateY(0%) scaleX(1.02);
+	}	
+	100%{
+		transform: translateY(0%) scaleX(1);		
+	}
+}
+
+@-webkit-keyframes slideExpandUp {
+	0% {
+		-webkit-transform: translateY(100%) scaleX(0.5);
+	}
+	30%{
+		-webkit-transform: translateY(-8%) scaleX(0.5);
+	}	
+	40%{
+		-webkit-transform: translateY(2%) scaleX(0.5);
+	}
+	50%{
+		-webkit-transform: translateY(0%) scaleX(1.1);
+	}
+	60%{
+		-webkit-transform: translateY(0%) scaleX(0.9);		
+	}
+	70% {
+		-webkit-transform: translateY(0%) scaleX(1.05);
+	}			
+	80%{
+		-webkit-transform: translateY(0%) scaleX(0.95);		
+	}
+	90% {
+		-webkit-transform: translateY(0%) scaleX(1.02);
+	}	
+	100%{
+		-webkit-transform: translateY(0%) scaleX(1);		
+	}
+}
+
+
+.sidebar ul {
+   margin: 0;
+   padding: 0;
+}
+.sidebar li {
+   line-height: 1.5em;
+   /* background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; */
+   display: block;
+   padding-top: 5px;
+   margin-bottom: 5px;
+   list-style-type: none;
+}
+.sidebar li a:link {
+   color: #988f5e;
+}
+.sidebar li a:visited {
+   color: #b3ae94;
+}
+
+#footer::before {
+   content: '';
+   background-image: url(./icon.gif);
+   background-repeat: no-repeat;
+   color:black;
+   width: 10%;
+   height: 10%;
+   position: absolute;
+   transition: 1s;
+   bottom: -450%;
+   /* background-color: snow; */
+   }
