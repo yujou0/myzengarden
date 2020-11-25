@@ -705,6 +705,6 @@ footer a:nth-child(even){
    height: 10%;
    position: absolute;
    transition: 1s;
-   bottom: -450%;
+   bottom: -475%;
    /* background-color: snow; */
    }
