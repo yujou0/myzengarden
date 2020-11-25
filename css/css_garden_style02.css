@@ -696,7 +696,7 @@ footer a:nth-child(even){
    color: #b3ae94;
 }
 
-#footer::before {
+/* #footer::before {
    content: '';
    background-image: url(./icon.gif);
    background-repeat: no-repeat;
@@ -706,5 +706,4 @@ footer a:nth-child(even){
    position: absolute;
    transition: 1s;
    bottom: -475%;
-   /* background-color: snow; */
-   }
+   } */
