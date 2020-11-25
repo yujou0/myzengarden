@@ -276,14 +276,14 @@ h1, h1::before, h1::after {
    overflow: hidden;
    white-space: nowrap;
    animation: typing 4s steps(11) infinite;
-   font-size: 3rem;
+   font-size: 2rem;
  }
  .requirements h3 {
    width: 13em;
    overflow: hidden;
    white-space: nowrap;
    animation: typing 4s steps(11) infinite;
-   font-size: 3rem;
+   font-size: 1rem;
  }
 .explanation{
    background: white;
@@ -350,15 +350,21 @@ h1, h1::before, h1::after {
    background: b3ae94;
    color: black;
    border: gray 5px inset;
-   width: 60%;
+   width: 50%;
    float: right;
-   height: 50vh;
+   height: 60vh;
    /* margin-top: 10rem; */
-   background: white;
+   /* background: white; */
    padding: 40px;
+   background-image: url(./bg3.png);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   line-height: 5vh;
+   padding-top:120px ;
+   font-size: 1rem;
    /* margin-bottom: 10rem; */
 }
-.benefits::before {
+/* .benefits::before {
    content: '';
    background-image: url(https://www.renderhub.com/3dseller/fantasy-monster-dinosaur/fantasy-monster-dinosaur-01.jpg);
    background-repeat: no-repeat;
@@ -372,20 +378,22 @@ h1, h1::before, h1::after {
    left: 0%;
    margin-top: -45px;
    transition: 1s;
-   }
+   } */
 .requirements{
-   background: black;
+   /* background: black; */
    border: gray 5px inset;
    color: white;
-   width: 60%;
+   width: 50%;
    float: left;
-   height: 50vh;
+   height: 60vh;
    /* margin-bottom: 10rem; */
    padding: 30px;
-   margin-bottom: 20rem;
-
+   margin-bottom: 3rem;
+   background-image: url(https://postpartumny.org/wp-content/uploads/2018/11/wood-background-v1.jpg);
+   background-repeat: no-repeat;
+   background-size: 100% 100vh;
 }
-.requirements::before {
+/* .requirements::before {
 content: '';
 background-image: url(https://cdn.londonandpartners.com/-/media/images/london/visit/things-to-do/sightseeing/london-attractions/victoria-and-albert-museum/vanda_copyright_visitlondon_jonreid1920x1080.jpg?mw=640&hash=462899C04B86D1DCA5119216E8E0E72CE355AB00);
 background-repeat: no-repeat;
@@ -399,23 +407,32 @@ position: absolute;
 left: 60%;
 margin-top: -35px;
 transition: 1s;
-}
+} */
 
 .summary {
 margin:auto ;
-margin-top: 25rem;
-margin-bottom: 25rem;
+/* margin-right: 0px; */
+margin-top: 15rem;
+margin-bottom: 15rem;
 text-shadow: black 0.1em 0.1em 0.2em
 /* border: gray 5px solid; */
-color: #fff;
+color: #000;
 /* background: rgb(255, 255, 255); */
 text-transform: uppercase;
 animation: shining 0.05s alternate infinite;
-width: 30%;
-height: 30vh;
-font-size: 2rem;
+width: 60%;
+height: 70vh;
+font-size: 1rem;
+line-height:30px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-style: italic;
+/* background-color:rgba(255,255,255,0.5); */
+padding-left:16rem;
+padding-right:16rem;
+padding-top:8rem;
+background-image: url(https://img.1sucai.com/tuku/yulantu/111006/6309-111006121R336.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
 }
 
 .preamble::after {
@@ -426,7 +443,7 @@ font-style: italic;
    border-radius: 50%;
    background-image: (https://cdn.hk01.com/di/media/images/2076178/org/3291b87faf0a3a9955436bad89c60b98.jpg/Ykel-gHgs-740wUt2q04LC9DU6jtIwbS0Az3q9AM96s?v=w1920);
    background-repeat: no-repeat;
-   box-shadow: inset 0.5em -0.5em #857428;
+   box-shadow: inset 0.5em -0.5em rgba(255,255,205,0.5);
    animation: spin 4s linear infinite;
  
    &::before,
@@ -454,29 +471,40 @@ font-style: italic;
      transform: rotate(1turn);
    }
  }
-
+/* .supporting{
+   background-image: url(./bg2.jpg);
+   background-repeat: no-repeat;
+   background-size: 100% 100vh;
+} */
 .preamble {
-background: black;
+/* background: black; */
 border: gray 5px inset;
 height: auto;
 padding: 40px;
 width: 60%;
 height: 50vh;
-color: white;
-font-size: 14px;
-margin-bottom: 15rem;
+color: black;
+font-size: 1rem;
+margin-bottom: 20rem;
+background-image: url(./bg2.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100vh;
+text-align: center;
+line-height: 30px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.preamble::after {
+.preamble::after { 
    content: '';
-   color:black;
+   /* color:black; */
    text-align: center;
    width: 30%;
    height: 50%;
    position: absolute;
-   left: 20%;
-   top: 130%;
+   /* left: 12%; */
+   margin: auto;
+   top: 135%;
    transition: 1s;
-   z-index: -1;
+   z-index: 999;
 
    }
 
@@ -484,16 +512,19 @@ margin-bottom: 15rem;
    content: '';
    background-image: url(https://cdn.britannica.com/51/194651-050-747F0C18/Interior-National-Gallery-of-Art-Washington-DC.jpg);
    background-repeat: no-repeat;
-   background-size: 40% 50vh;
+   background-size: 100% 100%;
    color:black;
    text-align: center;
-   line-height: 400px;
-   width: 100%;
-   height: 100%;
+   /* line-height: 400px; */
+   width: 500px;
+   height: 500px;
    position: absolute;
-   left: 60%;
-   margin-top: -45px;
+   /* left: 60%; */
+   right: 1%;
+   margin-top: -110px;
    transition: 1s;
+   border-radius: 50%;
+   border:5px gray solid;
    }
 
 .preamble p1{
@@ -696,7 +727,7 @@ footer a:nth-child(even){
    color: #b3ae94;
 }
 
-#footer::before {
+/* #footer::before {
    content: '';
    background-image: url(./icon.gif);
    background-repeat: no-repeat;
@@ -705,6 +736,5 @@ footer a:nth-child(even){
    height: 10%;
    position: absolute;
    transition: 1s;
-   bottom: -450%;
-   /* background-color: snow; */
-   }
+   bottom: -475%;
+   } */
